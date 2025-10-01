@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Memory game</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="game">
+    <div class="controls">
+      <button>Start</button>
+      <div class="stats">
+        <div class="moves">0 moves</div>
+        <div class="timer">Time : 0 sec</div>
+      </div>
+    </div>
+
+    <div class="board-container">
+      <div class="board" data-dimension="4"></div>
+
+      
+      <div class="win">
+        🎉 You Won! 🎉
+      </div>
+
+      
+      <div class="game-over">
+        <h1>Game Over</h1>
+        <p>Better luck next time...</p>
+      </div>
+    </div>
+  </div>
+
+  
+  <audio id="bg-music" src="backsound.mp3" loop></audio>
+  <audio id="flip-sound" src="flip.mp3"></audio>
+  <audio id="win-sound" src="win.mp3"></audio>
+  <audio id="victory-sound" src="victory.mp3"></audio>
+  <audio id="lose-sound" src="lose.mp3"></audio>
+
+  
+  <div id="confetti-container"></div>
+</body>
+</html>
